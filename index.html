@@ -3,7 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hunch — Hunch</title>
+<title>Hunch — Daily Logic Puzzle</title>
+<meta name="description" content="A daily deduction puzzle with no words in it. One hidden pattern of shapes and colours, six guesses, one attempt — the same puzzle for everyone.">
+<meta name="apple-itunes-app" content="app-id=6809274736">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://pacificfrontdesk.github.io/hunch/">
+<meta property="og:title" content="Hunch — Daily Logic Puzzle">
+<meta property="og:description" content="One puzzle a day. One try. A wordless deduction puzzle from Nattskift Games.">
+<meta property="og:image" content="https://pacificfrontdesk.github.io/hunch/img/icon.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="img/icon.jpg">
+<link rel="apple-touch-icon" href="img/icon.jpg">
 <style>
     :root { color-scheme: light dark; }
     body {
@@ -11,32 +21,83 @@
       font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       color: #282522; background: #F3EBDD;
     }
-    h1 { font-size: 1.9rem; letter-spacing: -0.01em; margin: 0 0 0.25rem; }
+    h1 { font-size: 1.9rem; letter-spacing: -0.01em; margin: 0; }
     h2 { font-size: 1.15rem; margin: 2.4rem 0 0.6rem; }
-    .sub { color: #73695F; margin: 0 0 2.5rem; }
+    .sub { color: #73695F; margin: 0.1rem 0 0; }
     ul { padding-left: 1.2rem; }
     li { margin: 0.35rem 0; }
     a { color: #1677E8; }
     footer { margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid #D8CDBA; color: #73695F; font-size: 0.92rem; }
+
+    .hero { display: flex; align-items: center; gap: 20px; margin-bottom: 1.8rem; }
+    .icon { width: 96px; height: 96px; border-radius: 22%; flex: 0 0 auto;
+            box-shadow: 0 4px 14px rgba(40, 37, 34, 0.18); }
+    .tagline { font-size: 1.3rem; font-weight: 650; margin: 0 0 0.5rem; }
+    .cta { display: inline-block; margin: 1.1rem 0 0.4rem; padding: 12px 24px; border-radius: 999px;
+           background: #282522; color: #F3EBDD; font-weight: 600; text-decoration: none; }
+    .shots { display: flex; gap: 16px; margin: 2rem -24px 0; padding: 6px 24px 18px;
+             overflow-x: auto; scroll-snap-type: x mandatory; }
+    .shots img { width: 220px; height: auto; flex: 0 0 auto; border-radius: 18px; scroll-snap-align: start;
+                 box-shadow: 0 6px 20px rgba(40, 37, 34, 0.14); }
+
     @media (prefers-color-scheme: dark) {
       body { color: #F2F0EC; background: #24272A; }
       .sub, footer { color: #9BA0A5; }
       footer { border-top-color: #3A3E42; }
       a { color: #6FA8FF; }
+      .cta { background: #F2F0EC; color: #24272A; }
+      .shots img { box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45); }
     }
 </style>
 </head>
 <body>
-<h1>Hunch</h1>
-<p class="sub">A wordless daily deduction puzzle · Nattskift Games</p>
-<p>One hidden pattern of five pieces a day. Each piece has a shape and a colour, and you have
-six guesses to find all ten. The same puzzle for everyone, and one attempt at it.</p>
+<div class="hero">
+  <img class="icon" src="img/icon.jpg" width="96" height="96" alt="Hunch app icon: four faceted gems — a red circle, a yellow diamond, a blue cross and a green triangle">
+  <div>
+    <h1>Hunch</h1>
+    <p class="sub">Daily Logic Puzzle · Nattskift Games</p>
+  </div>
+</div>
 
-<h2>Pages</h2>
+<p class="tagline">One puzzle a day. One try.</p>
+<p>A daily deduction puzzle with no words in it. Every day, one hidden pattern of five pieces.
+Each piece has a shape and a colour, and you have six guesses to find all ten. There is one
+puzzle a day, the same one for everyone, and one attempt at it.</p>
+<a class="cta" href="https://apps.apple.com/app/id6809274736">Get Hunch on the App Store</a>
+<p class="sub">Free for iPhone</p>
+
+<div class="shots">
+  <img src="img/01-board.jpg" width="600" height="1304" alt="A board with two rows played; confirmed pieces carry into the next row">
+  <img src="img/02-how-to-play.jpg" width="600" height="1304" alt="How to play: every cell is a shape and a colour">
+  <img src="img/03-boards.jpg" width="600" height="1304" alt="The six boards to play on">
+</div>
+
+<h2>How it plays</h2>
+<p>Pick a shape, pick a colour, fill five cells, guess. After every guess the board tells you
+which shapes were right and which colours were right — never which piece, never how close.
+Anything the board has proved carries into the next row on its own.</p>
+<p>The pattern is never random. Every answer follows a structure — a repeat, an alternation,
+a progression, a block, a mirror — and finding which one is the moment the puzzle turns.</p>
+
+<h2>What you get</h2>
 <ul>
-  <li><a href="./privacy.html">Privacy Policy</a></li>
+  <li>A new puzzle every day, the same for everyone, at 10:00 UTC — early morning across the US</li>
+  <li>Six guesses, one attempt, and a streak that grows while you solve</li>
+  <li>Game Center leaderboards for longest streak and puzzles solved</li>
+  <li>A result you can share, with no spoilers in it</li>
+  <li>Six boards to play on, and a colour-blind mode that gives every colour its own fill</li>
+  <li>No words to read, and no connection needed to play</li>
+</ul>
+
+<h2>The full game</h2>
+<p>The daily puzzle is free, every day. A one-time purchase unlocks the archive — every puzzle
+back to the first — and all six boards. No subscription, no adverts, nothing that runs out.</p>
+
+<h2>Help and policies</h2>
+<ul>
+  <li><a href="./support.html">Support</a> — common questions, and how to reach us</li>
+  <li><a href="./privacy.html">Privacy Policy</a> — Hunch collects no data</li>
   <li><a href="./terms.html">Terms of Use</a></li>
-  <li><a href="./support.html">Support</a></li>
 </ul>
 <footer>
   Hunch is made by Nattskift Games, a d/b/a of Pacific Front Desk LLC.<br>
