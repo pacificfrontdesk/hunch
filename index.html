@@ -35,6 +35,8 @@
     .tagline { font-size: 1.3rem; font-weight: 650; margin: 0 0 0.5rem; }
     .cta { display: inline-block; margin: 1.1rem 0 0.4rem; padding: 12px 24px; border-radius: 999px;
            background: #282522; color: #F3EBDD; font-weight: 600; text-decoration: none; }
+    /* Nothing to tap until the app is live, so it reads as a label, not a button. */
+    .cta.soon { background: transparent; color: #73695F; border: 1.5px solid #D8CDBA; cursor: default; }
     .shots { display: flex; gap: 16px; margin: 2rem -24px 0; padding: 6px 24px 18px;
              overflow-x: auto; scroll-snap-type: x mandatory; }
     .shots img { width: 220px; height: auto; flex: 0 0 auto; border-radius: 18px; scroll-snap-align: start;
@@ -46,6 +48,7 @@
       footer { border-top-color: #3A3E42; }
       a { color: #6FA8FF; }
       .cta { background: #F2F0EC; color: #24272A; }
+      .cta.soon { background: transparent; color: #9BA0A5; border-color: #3A3E42; }
       .shots img { box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45); }
     }
 </style>
@@ -63,7 +66,9 @@
 <p>A daily deduction puzzle with no words in it. Every day, one hidden pattern of five pieces.
 Each piece has a shape and a colour, and you have six guesses to find all ten. There is one
 puzzle a day, the same one for everyone, and one attempt at it.</p>
-<a class="cta" href="https://apps.apple.com/app/id6809274736">Get Hunch on the App Store</a>
+<!-- At launch, put the link back in place of the line below:
+     <a class="cta" href="https://apps.apple.com/app/id6809274736">Get Hunch on the App Store</a> -->
+<span class="cta soon">Coming soon to the App Store</span>
 <p class="sub">Free for iPhone</p>
 
 <div class="shots">
